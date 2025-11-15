@@ -1,0 +1,16 @@
+window_sizes 2400 1176 600 1790 881 216
+
+diagrams
+  active  classdiagram_ref 128021 // pec2
+    1432 713 100 A4 0 0
+end
+show_stereotypes
+selected operation_ref 129045 // simulate_read_delay
+open
+  class_ref 128021 // PDUHeader
+  class_ref 128149 // PDUPayload
+  class_ref 128277 // Message
+  class_ref 128405 // Client
+  class_ref 128533 // ReceiverSimulator
+end
+end

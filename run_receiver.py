@@ -1,4 +1,4 @@
-from client import Reciever
+from client import Receiver
 import socket
 
 SERVER_IP = '127.0.0.1'  # IP local para pruebas
@@ -17,7 +17,7 @@ if __name__ == "__main__":
     print(f"[Receiver] Conexión aceptada desde {addr}")
 
     # Crear instancia del Receptor
-    receiver_app = Reciever(SERVER_IP, conn)
+    receiver_app = Receiver(SERVER_IP, conn)
 
     # Bucle de recepción de mensajes
     try:

@@ -82,7 +82,7 @@ class Transmitter(Client):
             print(f"[Transmitter] Mensaje inesperado con opcode {header.operation}")
 
 
-class Reciever(Client):
+class Receiver(Client):
     def __init__(self, ip, sck):
         super().__init__(ip, sck)
 
@@ -165,7 +165,7 @@ class Reciever(Client):
 
 
 class ReceiverSimulator:
-    def __init__(self, receiver: Reciever):
+    def __init__(self, receiver: Receiver):
         self.receiver = receiver
 
     def simulate_read_delay(self, message, min_delay=1, max_delay=5):

@@ -1,0 +1,61 @@
+format 224
+
+classcanvas 128021 class_ref 128021 // PDUHeader
+  classdiagramsettings member_max_width 0 end
+  xyz 641 22 2000
+end
+classcanvas 128149 class_ref 128149 // PDUPayload
+  classdiagramsettings member_max_width 0 end
+  xyz 571 370 2000
+end
+classcanvas 128277 class_ref 128277 // Message
+  classdiagramsettings member_max_width 0 end
+  xyz 247 42 2000
+end
+classcanvas 128405 class_ref 128405 // Client
+  classdiagramsettings member_max_width 0 end
+  xyz 123 260 2000
+end
+classcanvas 128533 class_ref 128533 // ReceiverSimulator
+  classdiagramsettings member_max_width 0 end
+  xyz 476 550 2000
+end
+classcanvas 129173 class_ref 135061 // Transmitter
+  classdiagramsettings member_max_width 0 end
+  xyz 32 515 2000
+end
+classcanvas 129429 class_ref 135189 // Receiver
+  classdiagramsettings member_max_width 0 end
+  xyz 246 531 2005
+end
+relationcanvas 128661 relation_ref 128021 // <composition>
+  from ref 128021 z 2001 to ref 128277
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128789 relation_ref 128149 // <composition>
+  from ref 128149 z 2001 to ref 128277
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128917 relation_ref 128277 // <association>
+  from ref 128405 z 2001 to ref 128277
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129045 relation_ref 128405 // <dependency>
+  from ref 128533 z 2001 to ref 128405
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129301 relation_ref 134933 // <generalisation>
+  from ref 129173 z 2001 to ref 128405
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129685 relation_ref 135189 // <generalisation>
+  from ref 129429 z 2006 to ref 128405
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end
