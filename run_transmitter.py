@@ -15,11 +15,9 @@ if __name__ == "__main__":
         # Crear instancia del Transmitter
         transmitter_app = Transmitter(SERVER_IP, sck)
         
-        # Enviar varios mensajes de prueba
+        # Enviamos un mensaje de prueba
         mensajes = [
-            "¡Mensaje de prueba 1!",
-            "¡Mensaje de prueba 2!",
-            "¡Mensaje de prueba 3!"
+            "¡Mensaje de prueba 1!"
         ]
 
         for i, texto in enumerate(mensajes, start=101):

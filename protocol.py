@@ -16,7 +16,7 @@ class PDU_Header():
         self.payload_length = payload_length
 
 
-# "!HBI4s4sBI BH" es el formato del struct.pack y struct.unpack
+# "!HBI4s4sBIIH" es el formato del struct.pack y struct.unpack
 # https://docs.python.org/3/library/struct.html#format-characters
 
     # empaquetar el mensaje
