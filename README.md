@@ -1,3 +1,7 @@
+# Sockets Python
+Proyecto realizado por Fernando Melero y Giordano Castilla
+
+
 Primero en una terminal iniciamos el servidor
 
 Abrimos otra terminal y ejecutamos el emisor
@@ -32,5 +36,4 @@ En ReceiverSImulator se construye un mensaje con OPCODE = OP_READ_ACK, nos sirve
 Por último termina el bucle y se cierran tanto emisor como receptor.
 
 
-# Sockets Python
-Proyecto realizado por Fernando Melero y Giordano Castilla
+
